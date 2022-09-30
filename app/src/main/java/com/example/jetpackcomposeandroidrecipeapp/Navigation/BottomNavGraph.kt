@@ -1,4 +1,4 @@
-package com.example.jetpackcomposeandroidrecipeapp
+package com.example.jetpackcomposeandroidrecipeapp.Navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController

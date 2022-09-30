@@ -1,4 +1,5 @@
-package com.example.jetpackcomposeandroidrecipeapp
+package com.example.jetpackcomposeandroidrecipeapp.Navigation
+
 
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.material.*
@@ -67,7 +68,7 @@ fun BottomBar(navController: NavController) {
     /* Function that grabs the item and displays it */
     BottomNavigation{
         screens.forEach{
-            screen -> AddItem(screen = screen , currentDestination = currentDestination, navController = navController)
+                screen -> AddItem(screen = screen , currentDestination = currentDestination, navController = navController)
 
         }
     }
@@ -96,7 +97,7 @@ fun RowScope.AddItem(screen : BottomNavBar, currentDestination : NavDestination?
         } == true,
         /*change the color of the icon/text that have not been selected */
         unselectedContentColor = LocalContentColor.current.copy(alpha = ContentAlpha.disabled),
-         /* When we click on the icon we want to navigate to the associated screen */
+        /* When we click on the icon we want to navigate to the associated screen */
         onClick = {
             navController.navigate(screen.route) {
                 /* Pop up the start destination, so when clicking the back button it doesnt go back
@@ -113,4 +114,3 @@ fun RowScope.AddItem(screen : BottomNavBar, currentDestination : NavDestination?
         }
     )
 }
-

@@ -10,6 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.jetpackcomposeandroidrecipeapp.Navigation.NavigationScreen
 import com.example.jetpackcomposeandroidrecipeapp.ui.theme.JetPackComposeAndroidRecipeAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -23,6 +24,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
                     //navigates to the Navigation Screen class
+                    /*All navigation screen was referenced from @Stevdza-San */
                     NavigationScreen()
                 }
             }
